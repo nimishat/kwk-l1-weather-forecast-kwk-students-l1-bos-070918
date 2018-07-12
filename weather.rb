@@ -21,7 +21,7 @@ end
 
 def weather_report(weather)
   weather.each do |x,y|
-"The weather in #{weather[:city]} is #{weather[:description]}.  The temperature is #{weather[temperature_farenheit]} degrees Farenheit"
+"The weather in #{city(weather)} is #{description(weather)}.  The temperature is #{weather(temperature_farenheit)} degrees Farenheit"
 end
 weather_report
 
